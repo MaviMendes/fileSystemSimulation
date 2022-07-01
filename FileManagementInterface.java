@@ -20,7 +20,9 @@ public interface FileManagementInterface{
 	 * @throws VirtualFileNotFoundException - se diretorio identificado por pathname nao for encontrado 
      */
 	 public boolean addFile(String pathname, String filename, FileType type, int length) throws InvalidEntryException, VirtualFileNotFoundException;
-	
+	// ATUALIZAR O MODIFICATION DATE DO DIRETORIO TODA VEZ QUE TIVER ALTERACAO
+     // ATUALIZACAO PRO DIRETORIO PAI E FILHO
+     // ATUALIZAR TAMANHO DO DIRETORIO
 	/**
      * Metodo que exclui um arquivo/diretorio existente
      * @param pathname - caminho absoluto do diretorio alvo da operacao
@@ -30,7 +32,9 @@ public interface FileManagementInterface{
 	 * @throws VirtualFileNotFoundException - se diretorio ou filename identificado por pathname nao for encontrado 
      */
 	public boolean deleteFile(String pathname, String filename) throws InvalidEntryException, VirtualFileNotFoundException;
-	
+	// ATUALIZAR O MODIFICATION DATE DO DIRETORIO TODA VEZ QUE TIVER ALTERACAO
+     // ATUALIZAR TAMANHO DO DIRETORIO
+     
 	/**
      * Metodo que lista as entradas de um diretorio existente
      * @param pathname - caminho absoluto do diretorio alvo da operacao
