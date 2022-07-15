@@ -1,9 +1,5 @@
-package diskSimulator;
-/*Representação do bloco de dados. Utilizado para armazenamento */
+package src.diskSimulator;
 
-public class DataBlock { 
-    private byte[] dataBlock = new byte[128];  
+public class DataBlock {
+    
 }
-
-//acho que não precisamos dessa estrutura, já que ela vai ser representada pelo próprio 
-// disco 

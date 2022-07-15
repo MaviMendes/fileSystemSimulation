@@ -1,4 +1,4 @@
-package diskManagement;
+package src.diskManagement;
 public class DEntry {
     private long SNodeIdentifier; 
     private short EntryLenght; 
@@ -18,47 +18,6 @@ public class DEntry {
         this.EntryLenght = EntryLenght;
         this.FileType = FileType;
         this.FileNameLength = FileNameLength;
-        this.FileName = FileName;
-    }
-
-
-    public long getSNodeIdentifier() {
-        return this.SNodeIdentifier;
-    }
-
-    public void setSNodeIdentifier(long SNodeIdentifier) {
-        this.SNodeIdentifier = SNodeIdentifier;
-    }
-
-    public short getEntryLenght() {
-        return this.EntryLenght;
-    }
-
-    public void setEntryLenght(short EntryLenght) {
-        this.EntryLenght = EntryLenght;
-    }
-
-    public byte getFileType() {
-        return this.FileType;
-    }
-
-    public void setFileType(byte FileType) {
-        this.FileType = FileType;
-    }
-
-    public byte getFileNameLength() {
-        return this.FileNameLength;
-    }
-
-    public void setFileNameLength(byte FileNameLength) {
-        this.FileNameLength = FileNameLength;
-    }
-
-    public byte[] getFileName() {
-        return this.FileName;
-    }
-
-    public void setFileName(byte[] FileName) {
         this.FileName = FileName;
     }
 

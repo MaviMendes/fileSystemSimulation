@@ -1,4 +1,4 @@
-package diskManagement;
+package src.diskManagement;
 public interface FileManagementInterface{
 	
 	/**
